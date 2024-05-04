@@ -7,17 +7,17 @@ public class BankAccountCreation {
         String agencia, nome;
         double saldo;
 
-        System.out.println("Enter the agency:");
+        System.out.println("\nDigite a agencia:");
         agencia = sc.nextLine();
-        System.out.println("Enter the account number:");
+        System.out.println("Digite o numero da conta:");
         numero = sc.nextInt();
-        sc.nextLine(); // Consume the newline character
-        System.out.println("Enter the name:");
+        sc.nextLine();
+        System.out.println("Digite o nome:");
         nome = sc.nextLine();
-        System.out.println("Enter the balance:");
+        System.out.println("Digite o saldo:");
         saldo = sc.nextDouble();
 
-        System.out.println("Hello " + nome + ", thank you for creating an account with our bank. Your agency is " + agencia + ", account number " + numero + ", and your balance " + saldo + " is available for withdrawal.");
+        System.out.println("Olá "+ nome +", obrigado por criar uma conta em nosso banco, sua agência é "+agencia+", conta "+numero+" e seu saldo "+saldo+" já está disponível para saque.");
         sc.close();
     }
 }
